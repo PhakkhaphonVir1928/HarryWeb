@@ -1,0 +1,98 @@
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fce0e5; /* สีพื้นหลัง */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Register Container */
+.register-container {
+    background: linear-gradient(135deg, #ff007f, #d16c91); /* พื้นหลังกราดีน */
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Register Form */
+.register-form h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d16c91;
+    font-size: 1rem;
+    margin-top: 8px;
+    background-color: #fff;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #ff007f; /* เมื่อกรอกข้อมูลแล้ว border เปลี่ยนสี */
+    outline: none;
+}
+
+/* Button */
+button.btn {
+    background-color: #d16c91;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+}
+
+button.btn:hover {
+    background-color: #ff007f;
+    transform: scale(1.05); /* ขยายขนาดปุ่มเมื่อ hover */
+}
+
+/* Already Have Account */
+.already-have-account {
+    margin-top: 20px;
+}
+
+.already-have-account a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.already-have-account a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .register-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .register-form h2 {
+        font-size: 2rem;
+    }
+
+    .form-group input, button.btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

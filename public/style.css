@@ -1,0 +1,424 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', 'Mali', sans-serif;
+    background-color: #fce0e5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Mali', sans-serif;
+    color: #d16c91;
+    font-weight: 700;
+    padding: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffb9d2;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #FFC0CB;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    margin-right: 20px;
+}
+
+.navbar-logo {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-name {
+    color: rgb(248, 0, 153);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff007f;
+}
+
+.navbar-nav .nav-link.btn {
+    background-color: #d16c91; 
+    color: white; 
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.navbar-nav .nav-link.btn:hover {
+    background-color: #ff69b4; 
+}
+
+/* Header */
+header {
+    background-color: #fce0e5;
+    background-image: url('path/to/your/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #d16c91;
+}
+
+/* Button Styles */
+.btn.btn-primary {
+    background-color: #ff007f;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.btn.btn-primary:hover {
+    background-color: #ff69b4;
+}
+
+.back-btn {
+    display: inline-flex; 
+    align-items: center; 
+    background: linear-gradient(135deg, #ff007f, #d16c91); 
+    color: white; 
+    padding: 15px 35px; 
+    font-size: 1.2rem; 
+    font-weight: 600; 
+    border-radius: 50px;
+    text-decoration: none; 
+    transition: all 0.3s ease; 
+    cursor: pointer; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px;
+}
+
+.back-btn i {
+    margin-right: 12px; 
+    font-size: 1.5rem; 
+}
+
+.back-btn:hover {
+    background: linear-gradient(135deg, #ff69b4, #ff007f); 
+    transform: translateX(-5px); /* เลื่อนปุ่มเล็กน้อย */
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4); 
+}
+.back-btn:active {
+    transform: translateX(0); 
+    box-shadow: none; 
+}
+
+.back-btn:focus {
+    outline: none; 
+    box-shadow: 0 0 12px rgba(255, 105, 180, 0.6); 
+}
+
+/* Features Section */
+.feature-box {
+    background: linear-gradient(135deg, #FFAFCC, #ffc8dd);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.feature-box:hover {
+    border-color: #ff69b4;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+    transform: scale(1.05);
+}
+
+.feature-box i {
+    font-size: 3rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.feature-box:hover i {
+    color: white;
+}
+
+.feature-box h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.feature-box p {
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 0;
+    background-color: #fce0e5;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-title {
+    color: #d16c91;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.testimonial-item {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-item p {
+    font-style: italic;
+    color: #000;
+}
+
+.testimonial-item footer {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 0;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.gallery .carousel-item img {
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.gallery .carousel-item img:hover {
+    transform: scale(1.05);
+}
+
+/* External Websites Section */
+#external-websites {
+    padding: 150px 0; 
+    background-color: #fce0e5; 
+    border-radius: 25px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เงา */
+}
+
+#external-websites p {
+    color: #666; 
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#external-websites iframe {
+    border: 1px solid #ccc; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+#external-websites iframe:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Social Links Section */
+.social-links {
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px 0;
+    border-radius: 25px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+/* Facebook Button */
+.social-links a[href*="facebook.com"] {
+    background-color: #3b5998;
+}
+
+.social-links a[href*="facebook.com"]:hover {
+    background-color: #2d4373;
+    transform: scale(1.05);
+}
+
+/* TikTok Button */
+.social-links a[href*="tiktok.com"] {
+    background-color: #000000;
+}
+
+.social-links a[href*="tiktok.com"]:hover {
+    background-color: #69C9D0;
+    transform: scale(1.05);
+}
+
+/* Instagram Button */
+.social-links a[href*="instagram.com"] {
+    background-color: #E1306C;
+}
+
+.social-links a[href*="instagram.com"]:hover {
+    background-color: #C13584;
+    transform: scale(1.05);
+}
+
+/* Team Member Section */
+.card {
+    background-color: #fce0e5; 
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 50px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* GitHub Button */
+.btn-github {
+    background-color: #ff007f;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-github:hover {
+    background-color: #ff69b4;
+    transform: translateY(-3px);
+}
+/* Footer */
+footer {
+    background-color: #ffb6c1;
+    color: #333;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 25px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+
+    }
+}
+
+@media (max-width: 576px) {
+    header img {
+        width: 100px;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 1200px;
+    }
+}
