@@ -33,7 +33,7 @@ build/
 *.suo
 *.ntvs*
 *.njsproj
-*.sln
+*.slngit init
 
 # Mac system files
 .DS_Store
