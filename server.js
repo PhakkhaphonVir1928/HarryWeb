@@ -10,27 +10,27 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // ใช้ middleware สำหรับการให้บริการไฟล์ static
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname,)));
 
 // Routing สำหรับหน้า HTML
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'about.html'));
+    res.sendFile(path.join(__dirname, 'about.html'));
 });
 
 app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'contact.html'));
+    res.sendFile(path.join(__dirname, 'contact.html'));
 });
 
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'login.html'));
+    res.sendFile(path.join(__dirname,'login.html'));
 });
 
 app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'reg.html'));
+    res.sendFile(path.join(__dirname,'reg.html'));
 });
 
 // POST route สำหรับการลงทะเบียน (ส่งข้อมูลไปยัง register.php)
