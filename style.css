@@ -40,21 +40,6 @@ h6 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
-/* Brand section */
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    /* ระยะห่างโลโก้กับข้อความ */
-    text-decoration: none;
-}
-
-.navbar-logo {
-    height: 50px;
-    width: auto;
-    object-fit: contain;
-}
-
 .logo-name {
     color: #fdf3dc;
     font-size: 2rem;
