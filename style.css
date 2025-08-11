@@ -407,3 +407,131 @@ footer {
     padding: 20px 0;
     border-radius: 10px;
 }
+
+/* --- Responsive --- */
+
+/* มือถือ: จอแคบกว่า 576px */
+@media (max-width: 575.98px) {
+  /* ลดขนาดหัวข้อ */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5rem;
+  }
+
+  /* navbar padding ลดลง */
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  /* ปรับโลโก้ให้เล็กลง */
+  .navbar-logo {
+    height: 40px;
+  }
+
+  .logo-name {
+    font-size: 1.5rem;
+  }
+
+  /* เมนู nav ซ้อนแนวตั้ง */
+  .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* ปรับขนาดรูป img-fluid */
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+  /* team-title ปรับขนาด */
+  .team-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  /* card-img-top ปรับความสูง */
+  .team .card-img-top {
+    height: 180px;
+  }
+
+  /* card-body padding ลดลง */
+  .team .card-body {
+    padding: 15px;
+  }
+}
+
+/* แท็บเล็ต: จอระหว่าง 576px ถึง 991.98px */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  /* ปรับหัวข้อเล็กลงเล็กน้อย */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 2rem;
+  }
+
+  /* navbar padding ปานกลาง */
+  .navbar {
+    padding: 10px 25px;
+  }
+
+  /* โลโก้ขนาดกลาง */
+  .navbar-logo {
+    height: 45px;
+  }
+
+  .logo-name {
+    font-size: 1.8rem;
+  }
+
+  /* navbar-nav เป็นแนวนอน แต่ช่องว่างน้อยลง */
+  .navbar-nav {
+    gap: 15px;
+  }
+
+  /* team-title ขนาดกลาง */
+  .team-title {
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+  }
+
+  /* รูปทีมความสูงกลาง */
+  .team .card-img-top {
+    height: 220px;
+  }
+
+  /* card-body padding กลาง */
+  .team .card-body {
+    padding: 18px;
+  }
+
+  /* img-fluid */
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Desktop: จอใหญ่กว่า 992px */
+@media (min-width: 992px) {
+  /* ไม่มีการเปลี่ยนแปลงจากค่าเดิม */
+
+  /* img-fluid */
+  .img-fluid {
+    width: 500px;
+    height: 500px;
+  }
+
+  /* team-title ใหญ่ */
+  .team-title {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+  }
+
+  /* card-img-top ความสูง 280px */
+  .team .card-img-top {
+    height: 280px;
+  }
+
+  /* card-body padding */
+  .team .card-body {
+    padding: 20px;
+  }
+}
