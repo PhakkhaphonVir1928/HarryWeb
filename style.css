@@ -4,37 +4,48 @@
 /* Global Styles */
 body {
     font-family: 'EB Garamond', serif;
-    background-color: #1a1a1a; /* พื้นหินมืด */
+    background-color: #1a1a1a;
+    /* พื้นหินมืด */
     margin: 0;
     padding: 0;
-    color: #fdf3dc; /* ครีมสว่าง */
+    color: #fdf3dc;
+    /* ครีมสว่าง */
 }
 
 /* Titles */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'EB Garamond', serif;
-    color: #ffd86b; /* ทองสว่าง */
+    color: #ffd86b;
+    /* ทองสว่าง */
     font-weight: 700;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.7), 0 0 8px rgba(255,216,107,0.5);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 8px rgba(255, 216, 107, 0.5);
     text-align: center;
 }
 
 /* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between; /* โลโก้ซ้าย เมนูขวา */
+    justify-content: space-between;
+    /* โลโก้ซ้าย เมนูขวา */
     align-items: center;
-    background: linear-gradient(90deg, #4b3621, #6b4b2a, #3b3b3b); /* ไม้+หิน */
+    background: linear-gradient(90deg, #4b3621, #6b4b2a, #3b3b3b);
+    /* ไม้+หิน */
     border-radius: 15px;
     padding: 10px 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
 /* Brand section */
 .navbar-brand {
     display: flex;
     align-items: center;
-    gap: 12px; /* ระยะห่างโลโก้กับข้อความ */
+    gap: 12px;
+    /* ระยะห่างโลโก้กับข้อความ */
     text-decoration: none;
 }
 
@@ -48,15 +59,17 @@ h1, h2, h3, h4, h5, h6 {
     color: #fdf3dc;
     font-size: 2rem;
     font-weight: bold;
-    text-shadow: 0 0 5px rgba(255,216,107,0.5);
-    white-space: nowrap; /* ป้องกันขึ้นบรรทัดใหม่ */
+    text-shadow: 0 0 5px rgba(255, 216, 107, 0.5);
+    white-space: nowrap;
+    /* ป้องกันขึ้นบรรทัดใหม่ */
 }
 
 /* Navigation links */
 .navbar-nav {
     display: flex;
     align-items: center;
-    gap: 20px; /* ระยะห่างระหว่างเมนู */
+    gap: 20px;
+    /* ระยะห่างระหว่างเมนู */
     list-style: none;
     margin: 0;
     padding: 0;
@@ -71,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-nav .nav-link:hover {
     color: #ffd86b;
-    text-shadow: 0 0 8px rgba(255,216,107,0.8);
+    text-shadow: 0 0 8px rgba(255, 216, 107, 0.8);
 }
 
 /* Special button link */
@@ -91,11 +104,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #2f2f2f, #1a1a1a); /* มืดแต่คอนทราสต์สูง */
+    background: linear-gradient(135deg, #2f2f2f, #1a1a1a);
     padding: 60px 0;
     border-radius: 15px;
     margin-top: 50px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
 }
 
 header h1 {
@@ -108,18 +121,31 @@ header p {
     font-size: 1.5rem;
 }
 
+.img-fluid {
+  width: 500px;
+  height: 500px;
+  object-fit: contain; /* ให้รูปไม่บิด */
+}
+
 /* Feature Boxes */
 .feature-box:nth-child(1) {
-    background: linear-gradient(135deg, #6b1e1e, #ffd86b); /* แดงไวน์+ทอง */
+    background: linear-gradient(135deg, #6b1e1e, #ffd86b);
+    /* แดงไวน์+ทอง */
 }
+
 .feature-box:nth-child(2) {
-    background: linear-gradient(135deg, #2e5339, #c5d6c2); /* เขียว+เทาสว่าง */
+    background: linear-gradient(135deg, #2e5339, #c5d6c2);
+    /* เขียว+เทาสว่าง */
 }
+
 .feature-box:nth-child(3) {
-    background: linear-gradient(135deg, #1e2d5a, #c9b27c); /* น้ำเงินเข้ม+ทองหม่น */
+    background: linear-gradient(135deg, #1e2d5a, #c9b27c);
+    /* น้ำเงินเข้ม+ทองหม่น */
 }
+
 .feature-box:nth-child(4) {
-    background: linear-gradient(135deg, #b48a3b, #fff3d4); /* ทอง+ครีม */
+    background: linear-gradient(135deg, #b48a3b, #fff3d4);
+    /* ทอง+ครีม */
 }
 
 .feature-box {
@@ -132,12 +158,13 @@ header p {
 
 .feature-box:hover {
     transform: scale(1.06);
-    box-shadow: 0 0 18px rgba(255,216,107,0.7);
+    box-shadow: 0 0 18px rgba(255, 216, 107, 0.7);
 }
 
 /* Buttons */
 .btn.btn-primary {
-    background-color: #6b1e1e; /* แดงไวน์ */
+    background-color: #6b1e1e;
+    /* แดงไวน์ */
     color: #fdf3dc;
     font-weight: bold;
     border-radius: 25px;
@@ -147,15 +174,16 @@ header p {
 .btn.btn-primary:hover {
     background-color: #ffd86b;
     color: #1a1a1a;
-    box-shadow: 0 0 12px rgba(255,216,107,0.6);
+    box-shadow: 0 0 12px rgba(255, 216, 107, 0.6);
 }
 
 /* Important */
 .important {
-    background: #6b4b2a; /* สีน้ำตาลเข้ม */
+    background: #6b4b2a;
+    /* สีน้ำตาลเข้ม */
     border-radius: 15px;
     padding: 50px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
     margin-top: 50px;
 }
 
@@ -168,10 +196,11 @@ header p {
 
 /* Design Recommendations */
 .design {
-    background: linear-gradient(135deg, #2c2c2c, #1a1a1a); /* โทนปราสาทมืดหรู */
+    background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+    /* โทนปราสาทมืดหรู */
     padding: 60px 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
     margin-top: 50px;
 }
 
@@ -179,14 +208,16 @@ header p {
     font-family: 'EB Garamond', serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #d4af37; /* ทอง Hogwarts */
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    color: #d4af37;
+    /* ทอง Hogwarts */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     margin-bottom: 40px;
 }
 
 /* Design Recommendations Items */
 .testimonial-item {
-    background-color: rgba(255, 255, 255, 0.05); /* โปร่งนิดๆ */
+    background-color: rgba(255, 255, 255, 0.05);
+    /* โปร่งนิดๆ */
     border: 2px solid #d4af37;
     border-radius: 12px;
     padding: 20px;
@@ -219,153 +250,153 @@ section.py-5 {
     color: #f5e6c8;
     border-radius: 15px;
     padding: 50px 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
     margin-top: 40px;
 }
 
 /* team section */
 .team {
-  padding: 60px 0;
-  color: #fdf3dc;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 60px 0;
+    color: #fdf3dc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* หัวข้อทีม */
 .team-title {
-  font-size: 2.8rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 50px;
-  color: #ffd86b;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffd86b;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* การ์ดทีมกริฟฟินดอร์ */
 .team .card1 {
-  background: linear-gradient(90deg, #7F0909, #FFC500);
-  border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-  cursor: pointer;
+    background: linear-gradient(90deg, #7F0909, #FFC500);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 /* การ์ดทีมสลิธีริน */
 .team .card2 {
-  background: linear-gradient(90deg, #1A472A, #AAAAAA);
-  border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-  cursor: pointer;
+    background: linear-gradient(90deg, #1A472A, #AAAAAA);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 /* การ์ดทีมเรเวนคลอว์ */
 .team .card3 {
-  background: linear-gradient(90deg, #0E1A40, #946B2D);
-  border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-  cursor: pointer;
+    background: linear-gradient(90deg, #0E1A40, #946B2D);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 /* การ์ดทีมฮัฟเฟิลพัฟ */
 .team .card4 {
-  background: linear-gradient(90deg, #EEE117, #000000);
-  border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-  cursor: pointer;
+    background: linear-gradient(90deg, #EEE117, #000000);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 /* การ์ด hover */
 .team .card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 15px 25px rgba(255, 216, 107, 0.85);
+    transform: translateY(-12px);
+    box-shadow: 0 15px 25px rgba(255, 216, 107, 0.85);
 }
 
 /* รูปภาพในการ์ด */
 .team .card-img-top {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  transition: transform 0.3s ease;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: transform 0.3s ease;
 }
 
 /* รูปภาพ hover ขยายเล็กน้อย */
 .team .card:hover .card-img-top {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* เนื้อหาข้างในการ์ด */
 .team .card-body {
-  padding: 20px;
-  color: #fdf3dc;
+    padding: 20px;
+    color: #fdf3dc;
 }
 
 /* ชื่อในการ์ด */
 .team .card-title {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #ffd86b;
-  margin-bottom: 6px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffd86b;
+    margin-bottom: 6px;
 }
 
 /* หมายเลขนักศึกษา */
 .team .card-body h5:nth-child(2) {
-  font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 8px;
-  color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #fff;
 }
 
 /* บทบาท */
 .team .card-body p {
-  font-size: 1rem;
-  font-style: italic;
-  color: #ccc;
-  margin-bottom: 0;
+    font-size: 1rem;
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 0;
 }
 
 /* การ์ด hover */
 .team .card1:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 15px 25px rgba(255, 107, 107, 0.85);
+    transform: translateY(-12px);
+    box-shadow: 0 15px 25px rgba(255, 107, 107, 0.85);
 }
 
 .team .card1:hover .card-img-top {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .team .card2:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 15px 25px rgba(107, 255, 159, 0.85);
+    transform: translateY(-12px);
+    box-shadow: 0 15px 25px rgba(107, 255, 159, 0.85);
 }
 
 .team .card2:hover .card-img-top {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .team .card3:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 15px 25px rgba(107, 122, 255, 0.85);
+    transform: translateY(-12px);
+    box-shadow: 0 15px 25px rgba(107, 122, 255, 0.85);
 }
 
 .team .card3:hover .card-img-top {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .team .card4:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 15px 25px rgba(255, 216, 107, 0.85);
+    transform: translateY(-12px);
+    box-shadow: 0 15px 25px rgba(255, 216, 107, 0.85);
 }
 
 .team .card4:hover .card-img-top {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* Footer */
