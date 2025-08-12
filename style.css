@@ -3,13 +3,13 @@
 
 /* Global Styles */
 body {
-    font-family: 'EB Garamond', serif;
-    background-color: #1a1a1a;
-    /* พื้นหินมืด */
-    margin: 0;
-    padding: 0;
-    color: #fdf3dc;
-    /* ครีมสว่าง */
+  font-family: 'EB Garamond', serif;
+  background-color: #1a1a1a;
+  /* พื้นหินมืด */
+  margin: 0;
+  padding: 0;
+  color: #fdf3dc;
+  /* ครีมสว่าง */
 }
 
 /* Titles */
@@ -19,387 +19,802 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'EB Garamond', serif;
-    color: #ffd86b;
-    /* ทองสว่าง */
-    font-weight: 700;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 8px rgba(255, 216, 107, 0.5);
-    text-align: center;
+  font-family: 'EB Garamond', serif;
+  color: #ffd86b;
+  /* ทองสว่าง */
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 8px rgba(255, 216, 107, 0.5);
+  text-align: center;
 }
 
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    /* โลโก้ซ้าย เมนูขวา */
-    align-items: center;
-    background: linear-gradient(90deg, #4b3621, #6b4b2a, #3b3b3b);
-    /* ไม้+หิน */
-    border-radius: 15px;
-    padding: 10px 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  /* โลโก้ซ้าย เมนูขวา */
+  align-items: center;
+  background: linear-gradient(90deg, #4b3621, #6b4b2a, #3b3b3b);
+  /* ไม้+หิน */
+  border-radius: 15px;
+  padding: 10px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
 .logo-name {
-    color: #fdf3dc;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: 0 0 5px rgba(255, 216, 107, 0.5);
-    white-space: nowrap;
-    /* ป้องกันขึ้นบรรทัดใหม่ */
+  color: #fdf3dc;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255, 216, 107, 0.5);
+  white-space: nowrap;
+  /* ป้องกันขึ้นบรรทัดใหม่ */
 }
 
 /* Navigation links */
 .navbar-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    /* ระยะห่างระหว่างเมนู */
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* ระยะห่างระหว่างเมนู */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-nav .nav-link {
-    color: #fdf3dc;
-    font-size: 16px;
-    transition: color 0.3s, text-shadow 0.3s;
-    text-decoration: none;
+  color: #fdf3dc;
+  font-size: 16px;
+  transition: color 0.3s, text-shadow 0.3s;
+  text-decoration: none;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffd86b;
-    text-shadow: 0 0 8px rgba(255, 216, 107, 0.8);
+  color: #ffd86b;
+  text-shadow: 0 0 8px rgba(255, 216, 107, 0.8);
 }
 
 /* Special button link */
 .navbar-nav .nav-link.btn {
-    background-color: #ffd86b;
-    color: #1a1a1a;
-    font-weight: bold;
-    border-radius: 25px;
-    padding: 8px 20px;
-    transition: background-color 0.3s, transform 0.2s;
+  background-color: #ffd86b;
+  color: #1a1a1a;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 8px 20px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .navbar-nav .nav-link.btn:hover {
-    background-color: #e6c259;
-    transform: translateY(-2px);
+  background-color: #e6c259;
+  transform: translateY(-2px);
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #2f2f2f, #1a1a1a);
-    padding: 60px 0;
-    border-radius: 15px;
-    margin-top: 50px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(135deg, #2f2f2f, #1a1a1a);
+  padding: 60px 0;
+  border-radius: 15px;
+  margin-top: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
 }
 
 header h1 {
-    color: #ffd86b;
-    font-size: 3.2rem;
+  color: #ffd86b;
+  font-size: 3.2rem;
 }
 
 header p {
-    color: #fdf3dc;
-    font-size: 1.5rem;
-    text-indent : 10%;
+  color: #fdf3dc;
+  font-size: 1.5rem;
+  text-indent: 10%;
 }
 
 .img-fluid {
   width: 500px;
   height: 500px;
-  object-fit: contain; /* ให้รูปไม่บิด */
+  object-fit: contain;
+  /* ให้รูปไม่บิด */
 }
 
 /* Feature Boxes */
 .feature-box:nth-child(1) {
-    background: linear-gradient(135deg, #6b1e1e, #ffd86b);
-    /* แดงไวน์+ทอง */
+  background: linear-gradient(135deg, #6b1e1e, #ffd86b);
+  /* แดงไวน์+ทอง */
 }
 
 .feature-box:nth-child(2) {
-    background: linear-gradient(135deg, #2e5339, #c5d6c2);
-    /* เขียว+เทาสว่าง */
+  background: linear-gradient(135deg, #2e5339, #c5d6c2);
+  /* เขียว+เทาสว่าง */
 }
 
 .feature-box:nth-child(3) {
-    background: linear-gradient(135deg, #1e2d5a, #c9b27c);
-    /* น้ำเงินเข้ม+ทองหม่น */
+  background: linear-gradient(135deg, #1e2d5a, #c9b27c);
+  /* น้ำเงินเข้ม+ทองหม่น */
 }
 
 .feature-box:nth-child(4) {
-    background: linear-gradient(135deg, #b48a3b, #fff3d4);
-    /* ทอง+ครีม */
+  background: linear-gradient(135deg, #b48a3b, #fff3d4);
+  /* ทอง+ครีม */
 }
 
 .feature-box {
-    border-radius: 15px;
-    color: #fff9eb;
-    padding: 20px;
-    border: 2px solid #ffd86b;
-    transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 15px;
+  color: #fff9eb;
+  padding: 20px;
+  border: 2px solid #ffd86b;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .feature-box:hover {
-    transform: scale(1.06);
-    box-shadow: 0 0 18px rgba(255, 216, 107, 0.7);
+  transform: scale(1.06);
+  box-shadow: 0 0 18px rgba(255, 216, 107, 0.7);
 }
 
 /* Buttons */
 .btn.btn-primary {
-    background-color: #6b1e1e;
-    /* แดงไวน์ */
-    color: #fdf3dc;
-    font-weight: bold;
-    border-radius: 25px;
-    transition: background-color 0.3s, box-shadow 0.3s;
+  background-color: #6b1e1e;
+  /* แดงไวน์ */
+  color: #fdf3dc;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .btn.btn-primary:hover {
-    background-color: #ffd86b;
-    color: #1a1a1a;
-    box-shadow: 0 0 12px rgba(255, 216, 107, 0.6);
+  background-color: #ffd86b;
+  color: #1a1a1a;
+  box-shadow: 0 0 12px rgba(255, 216, 107, 0.6);
 }
 
 /* Important */
 .important {
-    background: #6b4b2a;
-    /* สีน้ำตาลเข้ม */
-    border-radius: 15px;
-    padding: 50px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
-    margin-top: 50px;
+  background: #6b4b2a;
+  /* สีน้ำตาลเข้ม */
+  border-radius: 15px;
+  padding: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  margin-top: 50px;
 }
 
 .important-item {
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    padding: 20px;
-    color: #fdf3dc;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fdf3dc;
 }
 
 /* Design Recommendations */
 .design {
-    background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
-    /* โทนปราสาทมืดหรู */
-    padding: 60px 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
-    margin-top: 50px;
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+  /* โทนปราสาทมืดหรู */
+  padding: 60px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  margin-top: 50px;
 }
 
 .design .section-title {
-    font-family: 'EB Garamond', serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #d4af37;
-    /* ทอง Hogwarts */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    margin-bottom: 40px;
+  font-family: 'EB Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d4af37;
+  /* ทอง Hogwarts */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 40px;
 }
 
 /* Design Recommendations Items */
 .recommendation-item {
-    background-color: rgba(255, 255, 255, 0.05);
-    /* โปร่งนิดๆ */
-    border: 2px solid #d4af37;
-    border-radius: 12px;
-    padding: 20px;
-    font-size: 1.5rem;
-    color: #f5e6c8;
-    font-family: 'EB Garamond', serif;
-    transition: transform 0.3s, box-shadow 0.3s;
-    height: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  /* โปร่งนิดๆ */
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 1.5rem;
+  color: #f5e6c8;
+  font-family: 'EB Garamond', serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
 }
+
 .recommendation-item p {
-    font-style: italic;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .recommendation-item footer {
-    font-size: 0.95rem;
-    color: #ffd86b;
+  font-size: 0.95rem;
+  color: #ffd86b;
 }
 
 /* Hover Effect */
 .recommendation-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.6);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.6);
 }
 
 /* ---------- Contact Section ---------- */
 section.py-5 {
-    background: linear-gradient(135deg, #ffd86b, #6b4b2a);
-    color: #f5e6c8;
-    border-radius: 15px;
-    padding: 50px 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
-    margin-top: 40px;
+  background: linear-gradient(135deg, #ffd86b, #6b4b2a);
+  color: #f5e6c8;
+  border-radius: 15px;
+  padding: 50px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  margin-top: 40px;
 }
 
 /* team section */
 .team {
-    padding: 60px 0;
-    color: #fdf3dc;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 60px 0;
+  color: #fdf3dc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* หัวข้อทีม */
 .team-title {
-    font-size: 2.8rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 50px;
-    color: #ffd86b;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #ffd86b;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* การ์ดทีมกริฟฟินดอร์ */
 .team .card1 {
-    background: linear-gradient(90deg, #7F0909, #FFC500);
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-    cursor: pointer;
+  background: linear-gradient(90deg, #7F0909, #FFC500);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 /* การ์ดทีมสลิธีริน */
 .team .card2 {
-    background: linear-gradient(90deg, #1A472A, #AAAAAA);
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-    cursor: pointer;
+  background: linear-gradient(90deg, #1A472A, #AAAAAA);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 /* การ์ดทีมเรเวนคลอว์ */
 .team .card3 {
-    background: linear-gradient(90deg, #0E1A40, #946B2D);
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-    cursor: pointer;
+  background: linear-gradient(90deg, #0E1A40, #946B2D);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 /* การ์ดทีมฮัฟเฟิลพัฟ */
 .team .card4 {
-    background: linear-gradient(90deg, #EEE117, #000000);
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-    cursor: pointer;
+  background: linear-gradient(90deg, #EEE117, #000000);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 /* การ์ด hover */
 .team .card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 15px 25px rgba(255, 216, 107, 0.85);
+  transform: translateY(-12px);
+  box-shadow: 0 15px 25px rgba(255, 216, 107, 0.85);
 }
 
 /* รูปภาพในการ์ด */
 .team .card-img-top {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: transform 0.3s ease;
 }
 
 /* รูปภาพ hover ขยายเล็กน้อย */
 .team .card:hover .card-img-top {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* เนื้อหาข้างในการ์ด */
 .team .card-body {
-    padding: 20px;
-    color: #fdf3dc;
+  padding: 20px;
+  color: #fdf3dc;
 }
 
 /* ชื่อในการ์ด */
 .team .card-title {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #ffd86b;
-    margin-bottom: 6px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffd86b;
+  margin-bottom: 6px;
 }
 
 /* หมายเลขนักศึกษา */
 .team .card-body h5:nth-child(2) {
-    font-weight: 600;
-    font-size: 1rem;
-    margin-bottom: 8px;
-    color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #fff;
 }
 
 /* บทบาท */
 .team .card-body p {
-    font-size: 1rem;
-    font-style: italic;
-    color: #ccc;
-    margin-bottom: 0;
+  font-size: 1rem;
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 0;
 }
 
 /* การ์ด hover */
 .team .card1:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 15px 25px rgba(255, 107, 107, 0.85);
+  transform: translateY(-12px);
+  box-shadow: 0 15px 25px rgba(255, 107, 107, 0.85);
 }
 
 .team .card1:hover .card-img-top {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .team .card2:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 15px 25px rgba(107, 255, 159, 0.85);
+  transform: translateY(-12px);
+  box-shadow: 0 15px 25px rgba(107, 255, 159, 0.85);
 }
 
 .team .card2:hover .card-img-top {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .team .card3:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 15px 25px rgba(107, 122, 255, 0.85);
+  transform: translateY(-12px);
+  box-shadow: 0 15px 25px rgba(107, 122, 255, 0.85);
 }
 
 .team .card3:hover .card-img-top {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .team .card4:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 15px 25px rgba(255, 216, 107, 0.85);
+  transform: translateY(-12px);
+  box-shadow: 0 15px 25px rgba(255, 216, 107, 0.85);
 }
 
 .team .card4:hover .card-img-top {
-    transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* Solution */
+.solution {
+  padding: 60px 15px;
+  background: linear-gradient(135deg, #2c2a29, #3e3b38);
+  /* สีเทาเข้มผสมดำ */
+  color: #d9c7b7;
+  /* สีครีมอมทอง ดูคลาสสิคเหมือนกระดาษเก่า */
+  font-family: 'Georgia', serif;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  margin-top: 40px;
+}
+
+/* หัวข้อ section */
+.solution .section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #bfa36a;
+  /* สีทองอมเหลืองแบบเก่า */
+  text-shadow: 2px 2px 6px #000000aa;
+  font-family: 'Cinzel', serif;
+  /* ถ้าต้องการโหลด font แบบ medieval */
+}
+
+/* ภาพ carousel */
+.solution .carousel-inner img {
+  border-radius: 12px;
+  max-height: 450px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+  user-select: none;
+  border: 3px solid #bfa36a;
+  /* ขอบสีทองเก่า */
+}
+
+.solution .carousel-caption {
+  background-color: rgba(51, 44, 33, 0.85);
+  /* พื้นหลังสีน้ำตาลเข้มโปร่งแสง */
+  border-radius: 12px;
+  padding: 18px 25px;
+  top: 15px;
+  /* เลื่อนขึ้นไปขอบบน */
+  left: 15px;
+  /* เลื่อนเข้าไปขอบขวา */
+  bottom: auto;
+  /* ปิดการใช้ bottom */
+  transform: none;
+  /* ปิดการแปลงตำแหน่ง */
+  max-width: 300px;
+  /* กำหนดความกว้างสูงสุด */
+  color: #f0e6d2;
+  /* สีครีมสว่าง */
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-style: italic;
+  box-shadow: 0 0 8px #bfa36a;
+  border: 1px solid #bfa36a;
+  font-family: 'Georgia', serif;
+  text-align: right;
+  /* จัดข้อความชิดขวา */
+}
+
+/* ปุ่มควบคุม carousel */
+.solution .carousel-control-prev-icon,
+.solution .carousel-control-next-icon {
+  filter: invert(90%) sepia(20%) saturate(200%) hue-rotate(30deg) brightness(70%);
+  /* สีทองหม่น ๆ */
+}
+
+/* ขนาดปุ่มและเอฟเฟกต์ */
+.solution .carousel-control-prev,
+.solution .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 45%;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.solution .carousel-control-prev:hover,
+.solution .carousel-control-next:hover {
+  opacity: 1;
+}
+
+/* พื้นหลังของ modal */
+.hufflepuff-modal-content {
+  background-color: #f9f4e7; /* สีครีมอ่อนๆ อบอุ่น */
+  border: 3px solid #e1c699; /* สีทองเหลืองทอง */
+  border-radius: 12px;
+  box-shadow: 0 0 20px #d4b04b;
+  font-family: 'Georgia', serif;
+}
+
+/* header */
+.hufflepuff-modal-header {
+  background-color: #f0d86b; /* สีเหลืองทองสดใส */
+  border-bottom: 2px solid #d4b04b;
+  color: #4b3b1d; /* สีน้ำตาลเข้ม */
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* ชื่อหัวข้อใน header */
+.hufflepuff-modal-title {
+  margin: 0;
+  font-family: 'Garamond', serif;
+  text-shadow: 1px 1px 1px #a37c00;
+}
+
+/* ปุ่มปิด */
+.hufflepuff-btn-close,
+.hufflepuff-btn-close-footer {
+  color: #4b3b1d;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.hufflepuff-btn-close:hover,
+.hufflepuff-btn-close-footer:hover {
+  opacity: 1;
+}
+
+/* body */
+.hufflepuff-modal-body {
+  padding: 2rem;
+  color: #5a4729; /* สีน้ำตาลกลาง */
+  font-size: 1.15rem;
+  background: linear-gradient(135deg, #fff9e6 0%, #f0e6c8 100%);
+}
+
+/* รูปสมาชิก */
+.hufflepuff-member-img {
+  width: 100px;    /* กำหนดความกว้างเท่ากัน */
+  height: 180px;   /* กำหนดความสูงเท่ากัน */
+  object-fit: cover; /* ตัดภาพให้เต็มกรอบโดยไม่ผิดสัดส่วน */
+  border: 3px solid #e1c699;
+  border-radius: 15px;
+  box-shadow: 0 0 8px #d4b04b;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hufflepuff-member-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #d4b04b;
+}
+
+/* ชื่อสมาชิก */
+.hufflepuff-member-name {
+  font-weight: 600;
+  font-family: 'Georgia', serif;
+  color: #7b5e14;
+  margin-bottom: 10px;
+}
+
+/* ปุ่มดูรายละเอียด */
+.hufflepuff-btn-view {
+  border-color: #d4b04b;
+  color: #5a4729;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hufflepuff-btn-view:hover {
+  background-color: #d4b04b;
+  color: #fff9e6;
+}
+
+/* Modal Gryffindor Styles */
+.modal-gryffindor .modal-content {
+  background-color: #3a0e0e; /* แดงเข้ม */
+  border: 3px solid #b08d57; /* สีทอง */
+  border-radius: 12px;
+  color: #f2d398; /* สีทองอ่อน */
+  font-family: 'Georgia', serif;
+}
+
+/* Header */
+.modal-gryffindor-header {
+  background-color: #6f1d1d; /* แดงเลือดหมูเข้ม */
+  border-bottom: 2px solid #b08d57;
+  color: #f2d398;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Close Button */
+.btn-gryffindor-close {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  /* ปรับสีปุ่ม close ให้เป็นสีทองอ่อน */
+}
+
+/* Modal Body */
+.modal-gryffindor-body {
+  padding: 1.5rem 2rem;
+  background-color: #4c1313; /* แดงเข้มอ่อนลงมา */
+}
+
+/* สมาชิกในบ้าน */
+.gryffindor-members {
+  gap: 1.5rem;
+}
+
+/* แต่ละสมาชิก */
+.gryffindor-member {
+  padding: 15px;
+  background-color: #601414; /* แดงเข้ม */
+  border-radius: 10px;
+  box-shadow: 0 0 10px #b08d57;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gryffindor-member:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffd66b; /* โกลว์ทองเมื่อ hover */
+}
+
+/* รูปภาพสมาชิก */
+.gryffindor-member-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #b08d57; /* ขอบทองรอบรูป */
+  margin-bottom: 10px;
+}
+
+/* ชื่อสมาชิก */
+.gryffindor-member-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffd66b; /* สีทอง */
+}
+
+/* ปุ่ม View */
+.gryffindor-btn-view {
+  border-color: #b08d57;
+  color: #b08d57;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.gryffindor-btn-view:hover {
+  background-color: #b08d57;
+  color: #3a0e0e;
+}
+
+/* Modal Background and Content */
+.modal-slytherin .modal-content {
+  background-color: #0b3d0b; /* เขียวเข้มแบบสลิธีริน */
+  border: 3px solid #2ecc71; /* สีเขียวสดใส */
+  border-radius: 12px;
+  color: #d0f0c0; /* สีเขียวอ่อนเพื่อความสบายตา */
+  font-family: 'Garamond', serif;
+}
+
+/* Modal Header */
+.modal-slytherin-header {
+  background-color: #145214; /* เขียวเข้มกว่าพื้นหลัง */
+  border-bottom: 2px solid #2ecc71;
+  color: #a9dfbf;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Title */
+.modal-slytherin-title {
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Close Button */
+.btn-slytherin-close {
+  filter: invert(60%) sepia(90%) saturate(700%) hue-rotate(90deg) brightness(90%) contrast(85%);
+  /* ทำให้ปุ่มปิดเป็นสีเขียวโทนบ้านสลิธีริน */
+}
+
+/* Modal Body */
+.modal-slytherin-body {
+  background-color: #113311;
+  padding: 20px;
+}
+
+/* Members Container */
+.slytherin-members {
+  gap: 25px;
+}
+
+/* Single Member */
+.slytherin-member {
+  margin-bottom: 20px;
+}
+
+/* Member Image */
+.slytherin-member-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 3px solid #2ecc71;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #2ecc71;
+  transition: transform 0.3s ease;
+}
+
+.slytherin-member-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #27ae60;
+}
+
+/* Member Name */
+.slytherin-member-name {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #a9dfbf;
+}
+
+/* View Button */
+.slytherin-btn-view {
+  margin-top: 10px;
+  border-color: #2ecc71;
+  color: #2ecc71;
+  transition: all 0.3s ease;
+}
+
+.slytherin-btn-view:hover {
+  background-color: #2ecc71;
+  color: #113311;
+  border-color: #27ae60;
+}
+
+/* Modal Ravenclaw */
+.modal-ravenclaw .modal-content {
+  background-color: #0e2f44; /* น้ำเงินเข้มเหมือนโทนบ้าน */
+  color: #c0d6df; /* สีเงินอ่อน */
+  border-radius: 12px;
+  border: 2px solid #3a9ad9; /* สีฟ้าอ่อนเป็นเส้นขอบ */
+  box-shadow: 0 0 15px #3a9ad9;
+}
+
+.modal-ravenclaw-header {
+  background-color: #144a68;
+  border-bottom: 2px solid #3a9ad9;
+}
+
+.modal-ravenclaw-title {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  color: #c0d6df;
+  font-size: 1.75rem;
+}
+
+.btn-ravenclaw-close {
+  filter: brightness(0) invert(1);
+}
+
+.modal-ravenclaw-body {
+  padding: 20px;
+}
+
+.ravenclaw-members .ravenclaw-member {
+  margin-bottom: 20px;
+}
+
+.ravenclaw-member-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #3a9ad9;
+  box-shadow: 0 0 10px #3a9ad9;
+  transition: transform 0.3s ease;
+}
+
+.ravenclaw-member-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #80b3ff;
+}
+
+.ravenclaw-member-name {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #c0d6df;
+  font-family: 'Georgia', serif;
+}
+
+.ravenclaw-btn-view {
+  margin-top: 8px;
+  border-color: #3a9ad9;
+  color: #3a9ad9;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ravenclaw-btn-view:hover {
+  background-color: #3a9ad9;
+  color: #fff;
+  border-color: #2a7bd1;
+  box-shadow: 0 0 10px #3a9ad9;
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(90deg, #4b3621, #6b4b2a, #3b3b3b);
-    color: #fdf3dc;
-    font-weight: bold;
-    padding: 20px 0;
-    border-radius: 10px;
+  background: linear-gradient(90deg, #4b3621, #6b4b2a, #3b3b3b);
+  color: #fdf3dc;
+  font-weight: bold;
+  padding: 20px 0;
+  border-radius: 10px;
 }
 
 /* --- Responsive --- */
 
 /* มือถือ: จอแคบกว่า 576px */
 @media (max-width: 575.98px) {
+
   /* ลดขนาดหัวข้อ */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: 1.5rem;
   }
 
@@ -448,8 +863,14 @@ footer {
 
 /* แท็บเล็ต: จอระหว่าง 576px ถึง 991.98px */
 @media (min-width: 576px) and (max-width: 991.98px) {
+
   /* ปรับหัวข้อเล็กลงเล็กน้อย */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: 2rem;
   }
 

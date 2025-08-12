@@ -20,19 +20,18 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#solution">Solution to build Stickers</a></li>
                 </ul>
             </div>
         </div>
         </div>
     </nav>
 
-    <!-- Products Section -->
-    <section id="products" class="py-5">
+    <!-- Stickers Section -->
+    <section id="stickers" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Our Products</h2>
+            <h2 class="text-center mb-4">Our Stickers</h2>
             <div class="row">
-
                 <!-- Product: ฮัฟเฟิลพัฟ -->
                 <div class="col-md-3">
                     <div class="card">
@@ -44,10 +43,10 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">ฮัฟเฟิลพัฟ</h5>
-                            <p class="card-text">Loyal at heart. Fair to all. Hufflepuff forever.</p>
+                            <h5 class="card-title">Hufflepuff</h5>
+                            <p class="card-text">Those patient Hufflepuffs are true and unafraid of toil.</p>
                             <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#modalHufflepuff">View Now</a>
+                                data-bs-target="#modalHufflepuff">View Membersbers</a>
                         </div>
                     </div>
                 </div>
@@ -63,10 +62,10 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">กริฟฟินดอร์</h5>
-                            <p class="card-text">Brave at heart. Daring and true. Gryffindor forever.</p>
+                            <h5 class="card-title">Gryffindors</h5>
+                            <p class="card-text">Their daring, nerve and chivalry set Gryffindors apart.</p>
                             <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#modalGryffindor">View Now</a>
+                                data-bs-target="#modalGryffindor">View Members</a>
                         </div>
                     </div>
                 </div>
@@ -82,10 +81,11 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">สลิธีริน</h5>
-                            <p class="card-text">Ambition fuels greatness. Slytherin forever.</p>
+                            <h5 class="card-title">Slytherin</h5>
+                            <p class="card-text">Ambition fuels greatness.Slytherin
+                            </p>
                             <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#modalSlytherin">View Now</a>
+                                data-bs-target="#modalSlytherin">View Members</a>
                         </div>
                     </div>
                 </div>
@@ -101,84 +101,47 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">เรเวนคลอ</h5>
-                            <p class="card-text">Wit beyond measure is man’s greatest treasure. Ravenclaw forever.</p>
+                            <h5 class="card-title">Ravenclaw</h5>
+                            <p class="card-text">Wit beyond measure is man's greatest treasure.</p>
                             <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#modalRavenclaw">View Now</a>
+                                data-bs-target="#modalRavenclaw">View Members</a>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
-        <!-- Gallery -->
-        <section id="gallery" class="gallery">
-            <div class="container text-center">
-                <h2 class="section-title">Gallery</h2>
-                <p id="gallery-caption" class="mb-4 fw-semibold">เปิดแชทกับ ChatGPT เพราะกลุ่มเราจะใช้ ChatGPT
-                    ช่วยสร้างภาพ</p>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active"><img src="img/gallery1.png" class="d-block w-100"
-                                alt="Gallery 1">
-                        </div>
-                        <div class="carousel-item"><img src="img/gallery2.png" class="d-block w-100" alt="Gallery 2">
-                        </div>
-                        <div class="carousel-item"><img src="img/gallery3.png" class="d-block w-100" alt="Gallery 3">
-                        </div>
-
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-
     </section>
+
     <!-- Modal แรก: บ้านฮัฟเฟิลพัฟ (เลือกสมาชิก) -->
     <div class="modal fade" id="modalHufflepuff" tabindex="-1" aria-labelledby="modalHufflepuffLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalHufflepuffLabel">ฮัฟเฟิลพัฟ Members</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-dialog modal-lg modal-dialog-centered hufflepuff-modal-dialog">
+            <div class="modal-content hufflepuff-modal-content">
+                <div class="modal-header hufflepuff-modal-header">
+                    <h5 class="modal-title hufflepuff-modal-title" id="modalHufflepuffLabel">Hufflepuff Members</h5>
+                    <button type="button" class="btn-close hufflepuff-btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body">
-                    <div class="row text-center">
+                <div class="modal-body hufflepuff-modal-body">
+                    <div class="row text-center hufflepuff-member-row">
                         <!-- สมาชิกคนที่ 1 -->
-                        <div class="col-md-4">
-                            <img src="img/namfon.png" class="img-fluid rounded" alt="namfon">
-                            <p>namfon</p>
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                        <div class="col-md-4 hufflepuff-member-col">
+                            <img src="img/namfon.png" class="img-fluid rounded hufflepuff-member-img" alt="namfon">
+                            <p class="hufflepuff-member-name">Namfon</p>
+                            <button class="btn btn-outline-primary hufflepuff-btn-view" data-bs-toggle="modal"
                                 data-bs-target="#modalH1Detail" data-bs-dismiss="modal">View</button>
                         </div>
 
                         <!-- สมาชิกคนที่ 2 -->
-                        <div class="col-md-4">
-                            <img src="img/lookmee.png" class="img-fluid rounded" alt="lookmee">
-                            <p>lookmee</p>
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                        <div class="col-md-4 hufflepuff-member-col">
+                            <img src="img/lookmee.png" class="img-fluid rounded hufflepuff-member-img" alt="lookmee">
+                            <p class="hufflepuff-member-name">Lookmee</p>
+                            <button class="btn btn-outline-primary hufflepuff-btn-view" data-bs-toggle="modal"
                                 data-bs-target="#modalH2Detail" data-bs-dismiss="modal">View</button>
                         </div>
                     </div>
                 </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-
             </div>
         </div>
     </div>
@@ -188,12 +151,12 @@
         <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalH1DetailLabel">Snamfon</h5>
+                    <h5 class="modal-title" id="modalH1DetailLabel">Namfon</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/Snamfon.png" class="img-fluid" alt="Snamfon">
-                    <h5 class="modal-title">Namfon Promt</h5>
+                    <h5 class="modal-title">Prompt</h5>
                     <p> Convert the photo above into a set of 12 chibi stickers (4 * 4grid) costumes like this image
                         including expressions laughing, loudly, angry, crying, sulking, thinking, sleeping, winking
                         suprise
@@ -209,12 +172,12 @@
         <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalH2DetailLabel">Slookmee</h5>
+                    <h5 class="modal-title" id="modalH2DetailLabel">Lookmee</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/Slookmee.png" class="img-fluid" alt="Slookmee">
-                    <h5 class="modal-title">Lookmee Promt</h5>
+                    <h5 class="modal-title">Prompt</h5>
                     <p> Convert the photo above into a set of 12 chibi stickers (4 * 4grid) costumes like this image
                         including expressions laughing, loudly, angry, crying, sulking, thinking, sleeping, winking
                         suprise
@@ -226,51 +189,45 @@
     </div>
 
     <!-- Modal : บ้านกริฟฟินดอร์ (เลือกสมาชิก) -->
-    <div class="modal fade" id="modalGryffindor" tabindex="-1" aria-labelledby="modalGryffindorLabel"
+    <div class="modal fade modal-gryffindor" id="modalGryffindor" tabindex="-1" aria-labelledby="modalGryffindorLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalGryffindorLabel">กริฟฟินดอร์ Members</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-gryffindor-dialog">
+            <div class="modal-content modal-gryffindor-content">
+                <div class="modal-header modal-gryffindor-header">
+                    <h5 class="modal-title modal-gryffindor-title" id="modalGryffindorLabel">Gryffindor Members</h5>
+                    <button type="button" class="btn-close btn-gryffindor-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body">
-                    <div class="row text-center">
+                <div class="modal-body modal-gryffindor-body">
+                    <div class="row text-center gryffindor-members">
                         <!-- สมาชิกคนที่ 1 (3)-->
-                        <div class="col-md-4">
-                            <img src="img/panpan.png" class="img-fluid rounded" alt="panpan">
-                            <p>panpan</p>
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                        <div class="col-md-4 gryffindor-member">
+                            <img src="img/panpan.png" class="img-fluid rounded gryffindor-member-img" alt="panpan">
+                            <p class="gryffindor-member-name">Panpan</p>
+                            <button class="btn btn-outline-primary gryffindor-btn-view" data-bs-toggle="modal"
                                 data-bs-target="#modalH3Detail" data-bs-dismiss="modal">View</button>
                         </div>
 
                         <!-- สมาชิกคนที่ 2 (4) -->
-                        <div class="col-md-4">
-                            <img src="img/jj.png" class="img-fluid rounded" alt="jay">
-                            <p>jay</p>
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                        <div class="col-md-4 gryffindor-member">
+                            <img src="img/jj.png" class="img-fluid rounded gryffindor-member-img" alt="jay">
+                            <p class="gryffindor-member-name">Jay</p>
+                            <button class="btn btn-outline-primary gryffindor-btn-view" data-bs-toggle="modal"
                                 data-bs-target="#modalH4Detail" data-bs-dismiss="modal">View</button>
+                        </div>
+
+                        <!-- สมาชิกคนที่ 3 (5) -->
+                        <div class="col-md-4 gryffindor-member">
+                            <img src="img/grace.png" class="img-fluid rounded gryffindor-member-img" alt="grace">
+                            <p class="gryffindor-member-name">Grace</p>
+                            <button class="btn btn-outline-primary gryffindor-btn-view" data-bs-toggle="modal"
+                                data-bs-target="#modalH5Detail" data-bs-dismiss="modal">View</button>
                         </div>
                     </div>
                 </div>
-
-                <!-- สมาชิกคนที่ 3 (5)-->
-                <div class="col-md-4">
-                    <img src="img/grace.png" class="img-fluid rounded" alt="grace">
-                    <p>grace</p>
-                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalH5Detail"
-                        data-bs-dismiss="modal">View</button>
-                </div>
             </div>
         </div>
-
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-
-    </div>
-    </div>
     </div>
 
     <!-- Modal รายละเอียด H1 (3) -->
@@ -278,12 +235,12 @@
         <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalH3DetailLabel">Spanpan</h5>
+                    <h5 class="modal-title" id="modalH3DetailLabel">Panpan</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/panpan.jpg" class="img-fluid" alt="Spanpan">
-                    <h5 class="modal-title">PanPan Promt</h5>
+                    <h5 class="modal-title">Prompt</h5>
                     <p> Convert the photo above into a set of 12 chibi stickers (4 * 4grid) costumes like this image
                         including expressions laughing, loudly, angry, crying, sulking, thinking, sleeping, winking
                         suprise
@@ -299,12 +256,12 @@
         <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalH4DetailLabel">SJay</h5>
+                    <h5 class="modal-title" id="modalH4DetailLabel">Jay</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/Sjj.png" class="img-fluid" alt="Sjay">
-                    <h5 class="modal-title">Jay Promt</h5>
+                    <h5 class="modal-title" id="modalH5DetailLabel">Prompt</h5>
                     <p> Convert the photo above into a set of 12 chibi stickers (4 * 4grid) costumes like this image
                         including expressions laughing, loudly, angry, crying, sulking, thinking, sleeping, winking
                         suprise
@@ -315,19 +272,22 @@
         </div>
     </div>
 
-    <!-- Modal รายละเอียด 3H (5)-->
-    <div class="modal fade" id="modalH5Detail" tabindex="-1" aria-labelledby="modalH5DetailLabel" aria-hidden="true">
+    <!-- Modal รายละเอียด H3 (5) -->
+    <div class=" modal fade" id="modalH5Detail" tabindex="-1" aria-labelledby="modalH5DetailLabel" aria-hidden="true">
         <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalH5DetailLabel">Sgrace</h5>
+                    <h5 class="modal-title" id="modalH5DetailLabel">Grace</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/Sgrace.png" class="img-fluid" alt="Sgrace">
-                    <h5 class="modal-title">Grace Promt</h5>
-                    <p> Promt: Convert the photo above into a set of 12 chibi stickers (4 * 4grid) costumes like this
-                        image including expressions laughing, loudly, angry, crying, sulking, thinking, sleeping,
+                    <h5 class="modal-title">Prompt</h5>
+                    <p> Promt: Convert the photo above into a set of 12 chibi stickers (4 * 4grid)
+                        costumes like
+                        this
+                        image including expressions laughing, loudly, angry, crying, sulking, thinking,
+                        sleeping,
                         winking suprise
                         ออกแบบธีม แฮรี่ พอตเตอร์
                     </p>
@@ -337,49 +297,45 @@
     </div>
 
     <!-- Modal : บ้านสลิธีริน (เลือกสมาชิก) -->
-    <div class="modal fade" id="modalSlytherin" tabindex="-1" aria-labelledby="modalSlytherinLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalSlytherinLabel">สลิธีริน Members</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade modal-slytherin" id="modalSlytherin" tabindex="-1" aria-labelledby="modalSlytherinLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-slytherin-dialog">
+            <div class="modal-content modal-slytherin-content">
+                <div class="modal-header modal-slytherin-header">
+                    <h5 class="modal-title modal-slytherin-title" id="modalSlytherinLabel">Slytherin Members</h5>
+                    <button type="button" class="btn-close btn-slytherin-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body">
-                    <div class="row text-center">
-                        <!-- สมาชิกคนที่ 1 (6)-->
-                        <div class="col-md-4">
-                            <img src="img/view.png" class="img-fluid rounded" alt="view">
-                            <p>view</p>
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                <div class="modal-body modal-slytherin-body">
+                    <div class="row text-center slytherin-members">
+                        <!-- สมาชิกคนที่ 1 (6) -->
+                        <div class="col-md-4 slytherin-member">
+                            <img src="img/view.png" class="img-fluid rounded slytherin-member-img" alt="view">
+                            <p class="slytherin-member-name">View</p>
+                            <button class="btn btn-outline-primary slytherin-btn-view" data-bs-toggle="modal"
                                 data-bs-target="#modalH6Detail" data-bs-dismiss="modal">View</button>
                         </div>
 
                         <!-- สมาชิกคนที่ 2 (7) -->
-                        <div class="col-md-4">
-                            <img src="img/mind.png" class="img-fluid rounded" alt="mind">
-                            <p>mind</p>
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                        <div class="col-md-4 slytherin-member">
+                            <img src="img/mind.png" class="img-fluid rounded slytherin-member-img" alt="mind">
+                            <p class="slytherin-member-name">Mind</p>
+                            <button class="btn btn-outline-primary slytherin-btn-view" data-bs-toggle="modal"
                                 data-bs-target="#modalH7Detail" data-bs-dismiss="modal">View</button>
+                        </div>
+
+                        <!-- สมาชิกคนที่ 3 (8) -->
+                        <div class="col-md-4 slytherin-member">
+                            <img src="img/aom.png" class="img-fluid rounded slytherin-member-img" alt="aom">
+                            <p class="slytherin-member-name">Aom</p>
+                            <button class="btn btn-outline-primary slytherin-btn-view" data-bs-toggle="modal"
+                                data-bs-target="#modalH8Detail" data-bs-dismiss="modal">View</button>
                         </div>
                     </div>
                 </div>
-
-                <!-- สมาชิกคนที่ 3 (8)-->
-                <div class="col-md-4">
-                    <img src="img/aom.png" class="img-fluid rounded" alt="aom">
-                    <p>aom</p>
-                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalH8Detail"
-                        data-bs-dismiss="modal">View</button>
-                </div>
             </div>
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-
-    </div>
-    </div>
     </div>
 
     <!-- Modal รายละเอียด H1 (6) -->
@@ -387,18 +343,23 @@
         <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalH6DetailLabel">view</h5>
+                    <h5 class="modal-title" id="modalH6DetailLabel">View</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/Sview.png" class="img-fluid" alt="Sview">
-                    <h5 class="modal-title">View Promt</h5>
-                    <p class="card-text">Convert the photo above into a set of 12 chibi-style stickers arranged in a 4×4
-                        grid. Each chibi should be wearing Harry Potter–themed costumes (robes, scarves, wands, house
+                    <h5 class="modal-title">Prompt</h5>
+                    <p class="card-text">Convert the photo above into a set of 12 chibi-style stickers arranged in a
+                        4×4
+                        grid. Each chibi should be wearing Harry Potter–themed costumes (robes, scarves, wands,
+                        house
                         colors) and styled consistently with a cute, colorful, and clean art style. Include the
-                        following expressions: laughing, laughing loudly, angry, crying, sulking, thinking, sleeping,
-                        winking, surprised, happy, confused, and shy. Ensure all stickers have consistent proportions,
-                        color palette, and high-resolution details suitable for printing as stickers. White background.
+                        following expressions: laughing, laughing loudly, angry, crying, sulking, thinking,
+                        sleeping,
+                        winking, surprised, happy, confused, and shy. Ensure all stickers have consistent
+                        proportions,
+                        color palette, and high-resolution details suitable for printing as stickers. White
+                        background.
                         ออกแบบธีม แฮรี่ พอตเตอร์ ขอให้ใส่ชุดบ้านของ สลิธีรินสีเขียว
                     </p>
                 </div>
@@ -411,18 +372,23 @@
         <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalH7DetailLabel">Smind</h5>
+                    <h5 class="modal-title" id="modalH7DetailLabel">Mind</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/Smind.png" class="img-fluid" alt="Smind">
-                    <h5 class="modal-title">Mind Promt</h5>
-                    <p class="card-text">Convert the photo above into a set of 12 chibi-style stickers arranged in a 4×4
-                        grid. Each chibi should be wearing Harry Potter–themed costumes (robes, scarves, wands, house
+                    <h5 class="modal-title">Prompt</h5>
+                    <p class="card-text">Convert the photo above into a set of 12 chibi-style stickers arranged in a
+                        4×4
+                        grid. Each chibi should be wearing Harry Potter–themed costumes (robes, scarves, wands,
+                        house
                         colors) and styled consistently with a cute, colorful, and clean art style. Include the
-                        following expressions: laughing, laughing loudly, angry, crying, sulking, thinking, sleeping,
-                        winking, surprised, happy, confused, and shy. Ensure all stickers have consistent proportions,
-                        color palette, and high-resolution details suitable for printing as stickers. White background.
+                        following expressions: laughing, laughing loudly, angry, crying, sulking, thinking,
+                        sleeping,
+                        winking, surprised, happy, confused, and shy. Ensure all stickers have consistent
+                        proportions,
+                        color palette, and high-resolution details suitable for printing as stickers. White
+                        background.
                         ออกแบบธีม แฮรี่ พอตเตอร์ ขอให้ใส่ชุดบ้านของ สลิธีรินสีเขียว
                     </p>
                 </div>
@@ -435,13 +401,13 @@
         <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalH8DetailLabel">Saom</h5>
+                    <h5 class="modal-title" id="modalH8DetailLabel">Aom</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/Saom.png" class="img-fluid" alt="Saom">
-                    <h5 class="modal-title">Aom Promt</h5>
-                    <p class="card-text">Convert the photo above into a set of 12 chibi stickers (4 * 4grid) costumes
+                    <h5 class="modal-title">Prompt</h5>
+                    <p class=" card-text">Convert the photo above into a set of 12 chibi stickers (4 * 4grid) costumes
                         like this image including expressions laughing, loudly, angry, crying, sulking, thinking,
                         sleeping, winking suprise
                         ออกแบบธีม แฮรี่ พอตเตอร์</p>
@@ -451,38 +417,35 @@
     </div>
 
     <!-- Modal : บ้านเรเวนคลอ (เลือกสมาชิก) -->
-    <div class="modal fade" id="modalRavenclaw" tabindex="-1" aria-labelledby="modalRavenclawLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalRavenclawLabel">เรเวนคลอ Members</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade modal-ravenclaw" id="modalRavenclaw" tabindex="-1" aria-labelledby="modalRavenclawLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-ravenclaw-dialog">
+            <div class="modal-content modal-ravenclaw-content">
+                <div class="modal-header modal-ravenclaw-header">
+                    <h5 class="modal-title modal-ravenclaw-title" id="modalRavenclawLabel">Ravenclaw Members</h5>
+                    <button type="button" class="btn-close btn-ravenclaw-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body">
-                    <div class="row text-center">
-                        <!-- สมาชิกคนที่ 1 (9)-->
-                        <div class="col-md-4">
-                            <img src="img/kwan.png" class="img-fluid rounded" alt="kwan">
-                            <p>kwan</p>
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                <div class="modal-body modal-ravenclaw-body">
+                    <div class="row text-center ravenclaw-members">
+                        <!-- สมาชิกคนที่ 1 (9) -->
+                        <div class="col-md-4 ravenclaw-member">
+                            <img src="img/kwan.png" class="img-fluid rounded ravenclaw-member-img" alt="kwan">
+                            <p class="ravenclaw-member-name">Kwan</p>
+                            <button class="btn btn-outline-primary ravenclaw-btn-view" data-bs-toggle="modal"
                                 data-bs-target="#modalH9Detail" data-bs-dismiss="modal">View</button>
                         </div>
 
                         <!-- สมาชิกคนที่ 2 (10) -->
-                        <div class="col-md-4">
-                            <img src="img/immy.png" class="img-fluid rounded" alt="immy">
-                            <p>immy</p>
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                        <div class="col-md-4 ravenclaw-member">
+                            <img src="img/immy.png" class="img-fluid rounded ravenclaw-member-img" alt="immy">
+                            <p class="ravenclaw-member-name">Immy</p>
+                            <button class="btn btn-outline-primary ravenclaw-btn-view" data-bs-toggle="modal"
                                 data-bs-target="#modalH10Detail" data-bs-dismiss="modal">View</button>
                         </div>
                     </div>
                 </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-
             </div>
         </div>
     </div>
@@ -492,16 +455,16 @@
         <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalH9DetailLabel">Skwan</h5>
+                    <h5 class="modal-title" id="modalH9DetailLabel">Kwan</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/Skwan.png" class="img-fluid" alt="Skwan">
-                    <h5 class="modal-title">skwn Promt</h5>
-                    <p class="card-text">Promt: Convert the photo above into a set of 12 chibi stickers (4 * 4grid)
-                        costumes like this image including expressions laughing, loudly, angry, crying, sulking,
-                        thinking, sleeping, winking suprise
-                        ออกแบบธีม แฮรี่ พอตเตอร์ บ้านฟ้า </p>
+                    <h5 class="modal-title">Prompt</h5>
+                    <p class=" card-text"> card-Promt: Convert the photo above into a set of 12 chibi stickers (4 *
+                        4grid) costumes
+                        like this image including expressions laughing, loudly, angry, crying, sulking, thinking,
+                        sleeping, winking suprise ออกแบบธีม แฮรี่ พอตเตอร์ บ้านฟ้า </p>
                 </div>
             </div>
         </div>
@@ -512,13 +475,14 @@
         <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalH10DetailLabel">Simmy</h5>
+                    <h5 class="modal-title" id="modalH10DetailLabel">Immy</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/Simmy.png" class="img-fluid" alt="Simmy">
-                    <h5 class="modal-title">Simmy Promt</h5>
-                    <p class="card-text">Convert the photo above into a set of 12 chibi stickers (4 * 4grid) costumes
+                    <h5 class="modal-title">Prompt</h5>
+                    <p class="card-text">Convert the photo above into a set of 12 chibi stickers (4 * 4grid)
+                        costumes
                         like this image including expressions laughing, loudly, angry, crying, sulking, thinking,
                         sleeping, winking suprise
                         ออกแบบธีม แฮรี่ พอตเตอร์</p>
@@ -526,10 +490,52 @@
             </div>
         </div>
     </div>
-    </div>
 
+    <!-- Solution -->
+    <section id="solution" class="solution">
+        <div class="container text-center">
+            <h2 class="section-title">Solution to build Stickers</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="img/gallery1.png" class="d-block w-100" alt="Gallery 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 id="gallery-caption">1.เปิดแชทกับ ChatGPT เพราะกลุ่มเราจะใช้ ChatGPT ช่วยสร้างภาพ
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item"><img src="img/gallery2.png" class="d-block w-100" alt="Gallery 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 id="gallery-caption">2.ใส่คำสั่ง (prompt) พร้อมแนบภาพต้นแบบ เพื่อให้ AI
+                                เข้าใจว่าอยากได้ภาพแบบไหน</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item"><img src="img/gallery3.png" class="d-block w-100" alt="Gallery 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 id="gallery-caption">3.รอให้ AI สร้างภาพเสร็จ แล้วเราจะได้ภาพที่ AI สร้างขึ้นมา</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center py-4">
+        <div class="container">
+            <p class="mb-0">© 2023 WDHS. All rights reserved.</p>
 
 </body>
+
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const captions = [
@@ -547,13 +553,5 @@
         });
     });
 </script>
-<style>
-    #gallery-caption {
-        font-size: 1.8rem;
-        font-weight: 600;
-        color: #222;
-        margin-bottom: 1.5rem;
-    }
-</style>
 
 </html>
