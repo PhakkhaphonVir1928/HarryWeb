@@ -104,6 +104,7 @@ header h1 {
 header p {
     color: #fdf3dc;
     font-size: 1.5rem;
+    text-indent : 10%;
 }
 
 .img-fluid {
@@ -200,31 +201,31 @@ header p {
 }
 
 /* Design Recommendations Items */
-.testimonial-item {
+.recommendation-item {
     background-color: rgba(255, 255, 255, 0.05);
     /* โปร่งนิดๆ */
     border: 2px solid #d4af37;
     border-radius: 12px;
     padding: 20px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: #f5e6c8;
     font-family: 'EB Garamond', serif;
     transition: transform 0.3s, box-shadow 0.3s;
     height: 100%;
 }
-
-.testimonial-item p {
+.recommendation-item p {
     font-style: italic;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.testimonial-item footer {
+.recommendation-item footer {
     font-size: 0.95rem;
     color: #ffd86b;
 }
 
 /* Hover Effect */
-.testimonial-item:hover {
+.recommendation-item:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(255, 215, 0, 0.6);
 }
